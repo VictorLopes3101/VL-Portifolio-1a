@@ -397,7 +397,7 @@ body {
 }
 .barrinha .azul {
 	display: block;
-	width: 50%;
+	width: 85%;
 	height: 8px;
 	border-radius: 4px;
 	background: rgb(10, 56, 207);
@@ -415,7 +415,7 @@ body {
 }
 .barrinha .lilas {
 	display: block;
-	width: 40%;
+	width: 60%;
 	height: 8px;
 	border-radius: 4px;
 	background: rgb(165, 23, 247);
