@@ -555,6 +555,11 @@ div.card:hover > .card-hover {
 	border: 2px solid var(--primary-color);
 }
 
+.botoes a.botao-acessar{
+	width: 100%;
+	display: flex;
+}
+
 .botao-acessar {
 	font-size: var(--pequena-media);
 	font-weight: 500;

@@ -38,5 +38,4 @@ Aqui estão as tecnologias usadas neste projeto.
 
 ## Design por
 * **Lavínia Melo** [@lavininhamelo](https://github.com/lavininhamelo)
-
 Obrigado por acessar o GitHub & Volte sempre!
