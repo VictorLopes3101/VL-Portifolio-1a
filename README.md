@@ -12,7 +12,6 @@ Aqui estão as tecnologias usadas neste projeto.
 
 ## Serviços Utilizados
 * GitHub
-* GitHub Pages
 * GoDaddy
 
 ## Como Usar... 
@@ -32,7 +31,7 @@ Aqui estão as tecnologias usadas neste projeto.
 ![contato screen](/imgs/contact.png)
 
 ## Links 
-victorlopes.me
+[Clique Aqui](victorlopes.me) 
 
 ## Autor(es)
 * **Victor Lopes**: @VictorLopes3101 (https://github.com/VictorLopes3101)
