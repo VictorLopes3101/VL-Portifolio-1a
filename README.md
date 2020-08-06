@@ -9,33 +9,32 @@ Aqui estão as tecnologias usadas neste projeto.
 * HTML5
 * CSS3
 * JavaScript
-* JQuery versão 3.5.1
-* FlexBox Layout
 
 ## Serviços Utilizados
 * GitHub
 * GitHub Pages
+* GoDaddy
 
 ## Como Usar... 
 ## Banner e apresentação - paginá de inicio com uma pequena introdução...
-![banner screen](https://github.com/droid-janderson/droid-janderson.github.io/blob/master/readme_img/img1.png)
+![banner screen](/imgs/home.png)
 
 ## Sobre - Contando um pouco sobre mim...
-![sobre screen](https://github.com/droid-janderson/droid-janderson.github.io/blob/master/readme_img/img2.png)
+![sobre screen](/imgs/about.png)
 
 ## Skills - Aqui apresento as tecnologias às quais domino...
-![skills screen](https://github.com/droid-janderson/droid-janderson.github.io/blob/master/readme_img/img3.png)
+![skills screen](/imgs/skills.png)
 
 ## Laboratório - Apresenta alguns pequenos projetos desenvolvidos por mim...
-![laboratório screen](https://github.com/droid-janderson/droid-janderson.github.io/blob/master/readme_img/img3.png)
+![laboratório screen](/imgs/lab.png)
 
 ## Contato - Nessa área apresento minha formas de contato...
-![contato screen](https://github.com/droid-janderson/droid-janderson.github.io/blob/master/readme_img/img5.png)
+![contato screen](/imgs/contact.png)
 
 ## Links 
-https://droid-janderson.github.io/
+victorlopes.me
 
 ## Autor(es)
-* **Janderson Brito**: @droid-janderson (https://github.com/droid-janderson/droid-janderson.github.io)
+* **Victor Lopes**: @VictorLopes3101 (https://github.com/VictorLopes3101)
 
-Obrigado por acessar o github & Volte sempre!
+Obrigado por acessar o GutHub & Volte sempre!
