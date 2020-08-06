@@ -2,7 +2,7 @@
 Portifólio pessoal
 
 ## Um pouco sobre o Projeto
-Esse projeto é um portifólio pessoal desenvolvido com o intuíto de mostrar e melhorar minhas habilidades de Desenvolvimento Web. E para isso estão listados todas as tecnologias e níveis que às domino e outros pequenos projetos que já tenho desenvolvido com finalidades semelhantes.
+Projeto pessoal para desenvolvimento de portifolio afim de mostrar um pouco das minhas habilidades.
 
 ## Tecnologias 
 Aqui estão as tecnologias usadas neste projeto.
@@ -31,9 +31,11 @@ Aqui estão as tecnologias usadas neste projeto.
 ![contato screen](/imgs/contact.png)
 
 ## Links 
-[Clique Aqui](victorlopes.me) 
+[Clique Aqui para acessar o portifolio](https://victorlopes.me) 
 
 ## Autor(es)
-* **Victor Lopes**: @VictorLopes3101 (https://github.com/VictorLopes3101)
+* **Victor Lopes**: [@VictorLopes3101](https://github.com/VictorLopes3101)
 
-Obrigado por acessar o GutHub & Volte sempre!
+## Design por
+* **Lavínia Melo** [@lavininhamelo](https://github.com/lavininhamelo)
+Obrigado por acessar o GitHub & Volte sempre!
