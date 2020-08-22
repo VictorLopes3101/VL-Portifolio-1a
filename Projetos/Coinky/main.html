@@ -2,64 +2,140 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href=".\styles\style.css">
+    <link rel="stylesheet" href=".\styles\main.css">
     <link rel="stylesheet" href=".\styles\flex.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Main</title>
 </head>
 
 <body>
-    <div class="content column items-center">
-        <header class="row">
-          <div class="logo row">
-            <img src="src\logo.svg">
-            <h1 class="logo">Coinky</h1>
-          </div>
-          <div class="opts">
+    <div class="content column">
+        <header class="header row">
+            <div class="logo row">
+                <img src="src/logo.svg" alt="Logo">
+                <h1>Coinky</h1>
+            </div>
+            <div class="options row">
+                <img src="src/notification.png">
+                <div class="logout row">
+                    <p>Sair</p>
+                    <img src="src/logout.png">
+                </div>
 
-          </div>
+            </div>
         </header>
-        <main class="row">
-            <div class="left column justify-center">
-                <div class="user row">
-                    <div class="avatar"></div>
-                    <div class="account-info column"></div>
+        <main class="content row">
+            <div class="left column">
+                <div class="user-info row">
+                    <img src="/src/avatar-own.png" alt="Avatar" class="avatar-own">
+                    <div class="infos column">
+                        <h3 class="welcome">Bem vindo de volta,</h3>
+                        <p class="username">André Marcos</p>
+                        <strong class="user-account">Agencia: 0001 • Conta: 32422-8</strong>
+                    </div>
                 </div>
-                <div class="transation column">
-                    <h3>Ultima Transação</h3>
-                    <div class="last-trans row"></div>
+                <div class="last-transation-box">
+                    <h3>Ultima transações</h3>
+                    <div class="last-transation row">
+                        <div class="last-transation-info column">
+                            <p class="transation-info">Transf. Ana Paula</p>
+                            <p class="transation-date">16/12/2019 • 16:40</p>
+                        </div>
+                        <p class="trans-amount negative">-36,00R$</p>
+                    </div>
                 </div>
-                <div class="operation column">
-                    <div class="row"></div>
-                    <div class="row"></div>
+                <div class="operations row">
+                    <div class="operation column">
+                        <img src="src/pagar.png" alt="Pagar" class="img-operation">
+                        <p>Pagar</p>
+                    </div>
+                    <div class="operation column">
+                        <img src="src/depositar.png" alt="Pagar" class="img-operation">
+                        <p>Depositar</p>
+                    </div>
+                    <div class="operation column">
+                        <img src="src/transferir.png" alt="Pagar" class="img-operation">
+                        <p>Transferir</p>
+                    </div>
                 </div>
+                <div class="operations row">
+                    <div class="operation column">
+                        <img src="src/sacar.png" alt="Pagar" class="img-operation">
+                        <p>Sacar</p>
+                    </div>
+                    <div class="operation column">
+                        <img src="src/ajustes.png" alt="Pagar" class="img-operation">
+                        <p>Ajustes</p>
+                    </div>
+                    <div class="operation column">
+                        <img src="src/ajuda.png" alt="Pagar" class="img-operation">
+                        <p>Ajuda</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
             <div class="right column">
-                <div class="amount column"></div>
-                <div class="transations column">
-                    <h3>Ultimas Transação</h3>
-                    <div class="row">
-                        <div class="avatar"></div>
-                        <div class="info column"></div>
-                        <p class="payment"></p>
+                <div class="infos column">
+                    <div class="amount-box column">
+                        <div class="amount-info row">
+                            <p>Saldo atual</p>
+                            <input type="checkbox" onmouseover="amount.type='text'"
+                                onmouseout="amount.type='password'"></input>
+
+                        </div>
+                        <h1 class="amount-actual" name="amount" type="text">R$ 356,53</h1>
                     </div>
-                    <div class="row">
-                        <div class="avatar"></div>
-                        <div class="info column"></div>
-                        <p class="payment"></p>
+                    <p class="date">21/08/2020 • 20:58</p>
+                </div>
+                <div class="last-transations-box column">
+                    <h3>Ultimas transações</h3>
+                    <div class="last-transations column">
+                        <div class="transation row">
+                            <img src="src/avatar-trans.png" alt="Avatar" class="trans-avatar">
+                            <div class="transations-info column">
+                                <p class="transation-info">Transf. Ana Paula</p>
+                                <p class="transation-date">16/12/2019 • 16:40</p>
+                            </div>
+                            <p class="trans-amount negative">-36,00R$</p>
+                        </div>
+                        <div class="transation row">
+                            <img src="src/avatar-trans.png" alt="Avatar" class="trans-avatar">
+                            <div class="transations-info column">
+                                <p class="transation-info">Transf. Ana Paula</p>
+                                <p class="transation-date">16/12/2019 • 16:40</p>
+                            </div>
+                            <p class="trans-amount negative">-36,00R$</p>
+                        </div>
+                        <div class="transation row">
+                            <img src="src/avatar-trans.png" alt="Avatar" class="trans-avatar">
+                            <div class="transations-info column">
+                                <p class="transation-info">Transf. Ana Paula</p>
+                                <p class="transation-date">16/12/2019 • 16:40</p>
+                            </div>
+                            <p class="trans-amount negative">-36,00R$</p>
+                        </div>
+                        <p class="more-info">Ver mais</p>
                     </div>
-                    <div class="row">
-                        <div class="avatar"></div>
-                        <div class="info column"></div>
-                        <p class="payment"></p>
-                    </div>
-                    <div class="more">Ver mais</div>
                 </div>
             </div>
         </main>
-        <footer class="row">
-            <footer>
     </div>
 </body>
 
