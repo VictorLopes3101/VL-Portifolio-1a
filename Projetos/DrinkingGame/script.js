@@ -4279,35 +4279,34 @@ var perguntas_pack = [
     }
 ];
 
-var classic_size = classic_pack.length;
-var novatos_size = novatos_pack.length;
-var wtf_size = wtf_pack.length;
-var votacao_size = votacao_pack.length;
-var sexy_size = sexy_pack.length;
-var perguntas_size = perguntas_pack.length;
+
+var botao = document.getElementById('trocar');
+botao.addEventListener("click", trocar_card);
+
 
 var packs = [classic_pack, novatos_pack, wtf_pack, votacao_pack, sexy_pack, perguntas_pack];
 
-var max_path = randomNumber(packs.length)
-var random_pack = packs[max_path]
+function trocar_card() {
 
-var random_card  = random_pack[randomNumber(random_pack.length)]
+    var max_path = randomNumber(packs.length);
+    var random_pack = packs[max_path];
 
-console.log(random_card.title)
-var title = document.getElementById('title');
-var texto = document.getElementById('texto');
-var pic = document.getElementById('pic');
-console.log(pic)
+    var random_card  = random_pack[randomNumber(random_pack.length)];
 
+    var title = document.getElementById('title');
+    var texto = document.getElementById('texto');
+    var pic = document.getElementById('pic');
 
-title.innerText = random_card.title;
-texto.innerText = random_card.card;
-pic.innerHTML = `<img src=${random_card.icon} width="32" height="32"></img>`
+    title.innerText = random_card.title;
+    texto.innerText = random_card.card;
+    pic.innerHTML = `<img src=${random_card.icon} width="32" height="32"></img>`;
 
-var background_color = random_card.background;
+    var background_color = random_card.background;
 
-document.body.style.backgroundColor = background_color;
-console.log(random_card)
+    document.body.style.backgroundColor = background_color;
+    botao.innerText = 'Trocar Carta'
+}
+
 function randomNumber(max) {
     return Math.floor(Math.random() * (max - 1) + 1);
   }
