@@ -4289,31 +4289,37 @@ var inputs = document.getElementsByTagName('input')
 function add_to_pack() {
 
     var packs = [];
-    //console.log(packs.length)
+    var total = 0
     for (var i = 0; i < inputs.length; i++) {
         if (inputs[i].checked == true) {
             if (inputs[i].id == 'classic_pack') {
                 packs.push(classic_pack)
+                total += classic_pack.length
             }
             if (inputs[i].id == 'novatos_pack') {
                 packs.push(novatos_pack)
+                total += novatos_pack.length
             }
             if (inputs[i].id == 'wtf_pack') {
                 packs.push(wtf_pack)
+                total += wtf_pack.length
             }
             if (inputs[i].id == 'votacao_pack') {
                 packs.push(votacao_pack)
+                total += votacao_pack.length
             }
             if (inputs[i].id == 'sexy_pack') {
                 packs.push(sexy_pack)
+                total += sexy_pack.length
             }
             if (inputs[i].id == 'perguntas_pack') {
                 packs.push(perguntas_pack)
+                total += perguntas_pack.length
             }
         }
     }
 
-    return packs
+    return [packs, total]
 }
 
 
@@ -4323,13 +4329,17 @@ function trocar_card() {
     var title = document.getElementById('title');
     var texto = document.getElementById('texto');
     var pic = document.getElementById('pic');
-    packs = add_to_pack();
+    var baralho = document.getElementById('baralho');
+
+    var requests = add_to_pack();
+    var packs = requests[0]
+    var total = requests[1]
+
     if (packs.length == 0) {
         console.log('Vazio')
         title.innerText = "Selecione pelo menos um baralho!"
         texto.innerText = ""
     } else  {
-        
         if (packs.length == 1) {
             var max_path = 0
         } else {
@@ -4337,23 +4347,14 @@ function trocar_card() {
             var max_path = Math.floor(Math.random() * (packs_length) + 1)-1
         }
         
+        baralho.innerText = `Você está jogando com ${total} cards.`
         var random_pack = packs[max_path];
-
-        console.log(`packs.length =`)
-        console.log(packs.length)
-        console.log(`max_path =`)
-        console.log(max_path)
-        //console.log(`Packs = ${packs}`)
-        //console.log(`Pack[max_path] = ${packs[max_path]}`)
-
         var random_card = random_pack[randomNumber(random_pack.length)];
-
+        var background_color = random_card.background;
 
         title.innerText = random_card.title;
         texto.innerText = random_card.card;
         pic.innerHTML = `<img src=${random_card.icon} width="64" height="64"></img>`;
-
-        var background_color = random_card.background;
 
         document.body.style.backgroundColor = background_color;
         botao.innerText = 'Trocar Carta';
