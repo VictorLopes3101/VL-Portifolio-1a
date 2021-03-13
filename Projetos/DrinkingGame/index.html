@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Drinking Game</title>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class='flex column items-center'>
-        <div class="carta justify-center">
-            <span id='pic'>
 
-            </span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinking Game</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='flex column justify-center items-center'>
+        <div class="carta column items-center">
+            <span id='pic'></span>
             <h3 id="title" class="title_card ">
                 Toque no botão para começar!
             </h3>
             <h1 id='texto' class="text_card">
             </h1>
+            <button id='trocar'>Iniciar</button>
+        </div>
+        <div id='escolhas' class='escolhas'>
+            <div class="row checkbox items-center classic_pack">
+                <input type="checkbox" id="classic_pack" unchecked>
+                <label for="classic_pack">Classico - 230 Cards</label>
+            </div>
+            <div class="row checkbox items-center perguntas_pack">
+                <input type="checkbox" id="perguntas_pack" unchecked>
+                <label for="perguntas_pack">Perguntas - 60 Cards</label>
+            </div>
+            <div class="row checkbox items-center  wtf_pack">
+                <input type="checkbox" id="wtf_pack" unchecked>
+                <label for="wtf_pack">WTF - 50 Cards</label>
+            </div>
+            <div class="row checkbox items-center novatos_pack">
+                <input type="checkbox" id="novatos_pack" unchecked>
+                <label for="novatos_pack">Reconhecendo Território - 100 Cards</label>
+            </div>
+
+            <div class="row checkbox items-center votacao_pack">
+                <input type="checkbox" id="votacao_pack" unchecked>
+                <label for="votacao_pack">Votação - 100 Cards</label>
+            </div>
+            <div class="row checkbox items-center sexy_pack">
+                <input type="checkbox" id="sexy_pack" unchecked>
+                <label for="sexy_pack">Hot - 69 Cards</label>
+            </div>
+            <h2>Mais cards em breve</h2>
+            <h5>Feito por Victor Lopes, inspirado por Caiari Eduarda❤️</h5>
+
+        </div>
     </div>
-    <button id='trocar'>Iniciar</button>
-    <div id='escolhas' class='flex'>
-        <input type="checkbox" id="classic_pack" unchecked>Classico</input>
-        <input type="checkbox" id="novatos_pack" unchecked>Reconhecendo Território</input>
-        <input type="checkbox" id="perguntas_pack" unchecked>Perguntas</input>
-        <input type="checkbox" id="votacao_pack" unchecked>Votação</input>
-        <input type="checkbox" id="wtf_pack" unchecked>WFT</input>
-        <input type="checkbox" id="sexy_pack" unchecked>Hot</input>
-
-
-    </div>
-    </div>
-
-
-	<script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
+
 </html>

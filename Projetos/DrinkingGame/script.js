@@ -4320,11 +4320,14 @@ function add_to_pack() {
 
 function trocar_card() {
 
+    var title = document.getElementById('title');
+    var texto = document.getElementById('texto');
+    var pic = document.getElementById('pic');
     packs = add_to_pack();
     if (packs.length == 0) {
         console.log('Vazio')
-        var title = document.getElementById('title');
         title.innerText = "Selecione pelo menos um baralho!"
+        texto.innerText = ""
     } else  {
         
         if (packs.length == 1) {
@@ -4345,13 +4348,10 @@ function trocar_card() {
 
         var random_card = random_pack[randomNumber(random_pack.length)];
 
-        var title = document.getElementById('title');
-        var texto = document.getElementById('texto');
-        var pic = document.getElementById('pic');
 
         title.innerText = random_card.title;
         texto.innerText = random_card.card;
-        pic.innerHTML = `<img src=${random_card.icon} width="32" height="32"></img>`;
+        pic.innerHTML = `<img src=${random_card.icon} width="64" height="64"></img>`;
 
         var background_color = random_card.background;
 
